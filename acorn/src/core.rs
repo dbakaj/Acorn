@@ -22,7 +22,7 @@ impl Window {
 
         gl::load_with(|s| window.get_proc_address(s));
 
-        Self { m_window: window, m_events: events, m_glfw: glfw}
+        Self { m_window: window, m_events: events, m_glfw: glfw }
     }
 
     pub fn update(&mut self) -> () {
@@ -32,7 +32,6 @@ impl Window {
 
         for(_, event) in glfw::flush_messages(&self.m_events) {
             println!("{:?}", event);
-
             match event {
                 glfw::WindowEvent::Key(Key::Escape, _, Action::Press, _) => {
                     self.m_window.set_should_close(true);
