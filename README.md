@@ -1,6 +1,6 @@
 # Acorn
 
-A graphics rendering library made in rust.
+A graphics rendering library made in Rust.
 
 ## Running the Example
 
